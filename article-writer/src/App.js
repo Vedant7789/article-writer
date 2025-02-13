@@ -39,8 +39,8 @@ export default function App() {
     };
 
     return (
-        <div className="max-w-3xl mx-auto p-6">
-            <h1 className="text-2xl font-bold mb-4">ARTICLE WRITER</h1>
+        <div className="flex items-center justify-center min-h-screen bg-gray-100">
+            <h1 className="text-2xl font-bold">ARTICLE WRITER</h1>
 
             <input 
                 type="text" 
@@ -60,7 +60,7 @@ export default function App() {
 
             {essay && (
                 <div className="mt-6">
-                    <h2 className="text-xl font-semibold">Generated Article</h2>
+                    <h2 className="text-xl font-bold">Generated Article</h2>
                     <textarea 
                         className="w-full p-2 border rounded mt-2 h-40" 
                         value={essay} 
